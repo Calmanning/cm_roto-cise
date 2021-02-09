@@ -110,6 +110,29 @@ app.post("/api/new-workout", ({ body }, res) => {
             })
 })
 
+//update the workout
+app.put("/api/updated", (req, res) => {
+    db.exercise.update(
+        {
+            _id: req.params.id
+        },
+        {
+            $set: {
+                body: req.body
+            }
+        },
+        (err, data) => {
+            if(err) {
+                console.log(err);
+                res.send(err);
+            } else {
+                console.log(data);
+                res.send(data);
+            }
+        }
+    )
+})
+
 // =============================================================================
 // LISTENER
 // =============================================================================
