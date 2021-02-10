@@ -99,15 +99,15 @@ let newSeed = [
 ]
 
 
-// db.Workout.deleteMany()
-// .then(() => db.Workout.insertMany(newSeed))
-// .then ((data) => {
-//     console.log(data.result + " Seeds done")
-//     console.log("now get to work!")
-// }).catch(err => {
-//     console.log(err);
-//     console.log("IT DIDN'T WORK")
-// })
+db.Workout.deleteMany()
+.then(() => db.Workout.insertMany(newSeed))
+.then ((data) => {
+    console.log(data.result + " Seeds done")
+    console.log("now get to work!")
+}).catch(err => {
+    console.log(err);
+    console.log("IT DIDN'T WORK")
+})
 
 
 
