@@ -1,0 +1,28 @@
+#body{
+    background-image: linear-gradient(to right, rgb(82, 146, 199) , rgba(243, 192, 125, 0.322));
+    margin: 0 auto;
+}
+
+#nav{
+    background-color: darkgrey;
+    border: 1px solid darkslategray;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    
+}
+
+li {
+    display: inline;
+    padding: 20px;
+}
+
+li a {
+    text-align: center;
+    padding: 12px;
+}
+
+li a:hover {
+    background-color: #111;
+    color:darkslategray;
+}
