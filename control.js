@@ -10,6 +10,7 @@ router.get('/', (req, res) => {
     res.render('index')
 })
 
+
 //viewing exercises
 // router.get("/api/exercises", (req, res) => {
 //     db.Exercise.find({}).then(dbExercise => {
@@ -24,6 +25,8 @@ router.get("/workouts", (req, res) => {
         //res.render('workouts')
         console.log("workouts loaded")
 
+    }).catch(err => {
+        res.json(err)
     })
 });
 

@@ -3,7 +3,7 @@ const db = require("./models")
 
 mongoose.connect("mongodb://localhost/workouts", {
     useNewUrlParser: true,
-    UseFindandModify: false,
+    UseFindAndModify: false,
     useUnifiedTopology: true
 
 });
