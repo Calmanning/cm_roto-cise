@@ -25,16 +25,16 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workouts", {
     useUnifiedTopology: true
 });
  
-var exphbs = require("express-handlebars");
-app.engine("handlebars", exphbs({
-    defaultLayout: "main",
-    helpers: {
-      "json": function (context) {
-        return JSON.stringify(context, null, 4);
-      }
-    }
-  }));
-  app.set("view engine", "handlebars");
+// var exphbs = require("express-handlebars");
+// app.engine("handlebars", exphbs({
+//     defaultLayout: "main",
+//     helpers: {
+//       "json": function (context) {
+//         return JSON.stringify(context, null, 4);
+//       }
+//     }
+//   }));
+//   app.set("view engine", "handlebars");
 
 // ================================================================================
 // ROUTES

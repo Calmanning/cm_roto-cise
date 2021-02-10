@@ -20,8 +20,8 @@ router.get('/', (req, res) => {
 //viewing workouts
 router.get("/api/workouts", (req, res) => {
     db.Workout.find({}).then(dbWorkout => {
-        //res.json(dbWorkout)
-        res.render('workouts')
+        res.json(dbWorkout)
+        //res.render('workouts')
         console.log("workouts loaded")
 
     })
