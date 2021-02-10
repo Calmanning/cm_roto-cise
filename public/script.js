@@ -15,3 +15,4 @@
 // }
 
 // getWorkouts();
+console.log("linked")
